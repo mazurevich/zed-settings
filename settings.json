@@ -1,0 +1,46 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "vim_mode": true,
+  "terminal": {
+    "font_size": 13.0,
+    "font_family": "FiraCode Nerd Font"
+  },
+  "relative_line_numbers": "enabled",
+  "gutter": {
+    "line_numbers": true
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "autosave": "on_focus_change",
+  "buffer_font_family": "Fira Code",
+  "linked_edits": true,
+  "show_whitespaces": "all",
+  "show_edit_predictions": true,
+  "tab_size": 2,
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 13.0,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  "lsp": {
+    "biome": {
+      "settings": {
+        "config_path": "<path>/biome.json"
+      }
+    }
+  },
+  "vim": {
+    "use_system_clipboard": "always"
+  }
+}

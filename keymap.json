@@ -1,0 +1,54 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-e": "workspace::ToggleLeftDock"
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "k j": "vim::NormalBefore",
+      "ctrl-v": "editor::Paste"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-j": "workspace::ToggleBottomDock",
+      "ctrl-shift-j": "workspace::ToggleBottomDock",
+      "ctrl-w": "pane::CloseActiveItem",
+      "space v": "pane::SplitVertical",
+      "space s": "pane::SplitHorizontal",
+      "space h": "workspace::ActivatePaneLeft",
+      "space j": "workspace::ActivatePaneDown",
+      "space k": "workspace::ActivatePaneUp",
+      "space l": "workspace::ActivatePaneRight",
+      "space p": "editor::Format",
+      "g h": "editor::Hover"
+    }
+  },
+  {
+    "context": "vim_mode == normal || vim_mode == visual",
+    "bindings": {
+      "ctrl-;": "vim::PushSneak"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-j": "workspace::ToggleBottomDock",
+      "ctrl-shift-n": "workspace::NewTerminal",
+      "ctrl-shift-a": "pane::ActivateNextItem",
+      "ctrl-shift-b": "pane::ActivatePreviousItem"
+    }
+  }
+]
